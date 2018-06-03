@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.309s</div>
+<div class="counter">0.277s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,12 +79,12 @@
 </thead>
 <tr>
 <td class="success">test simple blocking retry</td>
-<td>0.241s</td>
+<td>0.214s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test simply retry with rxjava</td>
-<td>0.068s</td>
+<td>0.063s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -92,9 +92,9 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>05:23:42.721 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-05:23:42.722 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-05:23:42.825 [nioEventLoopGroup-46-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+<pre>08:56:34.646 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+08:56:34.648 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+08:56:34.746 [nioEventLoopGroup-46-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -124,7 +124,7 @@ java.lang.IllegalStateException: Bad count
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:42.857 [nioEventLoopGroup-46-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.777 [nioEventLoopGroup-46-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -152,7 +152,7 @@ java.lang.IllegalStateException: Bad count
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:42.894 [nioEventLoopGroup-46-9] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.802 [nioEventLoopGroup-46-9] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -180,7 +180,7 @@ java.lang.IllegalStateException: Bad count
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:42.908 [nioEventLoopGroup-46-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.817 [nioEventLoopGroup-46-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -208,7 +208,7 @@ java.lang.IllegalStateException: Bad count
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:42.927 [nioEventLoopGroup-46-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.836 [nioEventLoopGroup-46-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -236,7 +236,7 @@ java.lang.IllegalStateException: Bad count
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:42.953 [nioEventLoopGroup-46-8] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.861 [nioEventLoopGroup-46-8] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -264,7 +264,7 @@ java.lang.IllegalStateException: Bad count
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:42.983 [nioEventLoopGroup-46-9] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.891 [nioEventLoopGroup-46-9] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -292,7 +292,7 @@ java.lang.IllegalStateException: Bad count
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:43.018 [nioEventLoopGroup-46-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.927 [nioEventLoopGroup-46-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -320,7 +320,7 @@ java.lang.IllegalStateException: Bad count
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:43.019 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.retry.HttpClientRetrySpec$CountClient$Intercepted] executed with error: Internal Server Error: Bad count
+08:56:34.929 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.retry.HttpClientRetrySpec$CountClient$Intercepted] executed with error: Internal Server Error: Bad count
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: Bad count
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -364,7 +364,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:43.028 [nioEventLoopGroup-46-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.937 [nioEventLoopGroup-46-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -406,7 +406,7 @@ java.lang.IllegalStateException: Bad count
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:43.032 [nioEventLoopGroup-46-8] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.940 [nioEventLoopGroup-46-8] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -446,7 +446,7 @@ java.lang.IllegalStateException: Bad count
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:43.068 [nioEventLoopGroup-46-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.973 [nioEventLoopGroup-46-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -486,7 +486,7 @@ java.lang.IllegalStateException: Bad count
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:43.071 [nioEventLoopGroup-46-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.976 [nioEventLoopGroup-46-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -526,7 +526,7 @@ java.lang.IllegalStateException: Bad count
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:43.074 [nioEventLoopGroup-46-8] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.980 [nioEventLoopGroup-46-8] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -566,7 +566,7 @@ java.lang.IllegalStateException: Bad count
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:43.076 [nioEventLoopGroup-46-9] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.982 [nioEventLoopGroup-46-9] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -606,7 +606,7 @@ java.lang.IllegalStateException: Bad count
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:43.080 [nioEventLoopGroup-46-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.986 [nioEventLoopGroup-46-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -646,7 +646,7 @@ java.lang.IllegalStateException: Bad count
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-05:23:43.083 [nioEventLoopGroup-46-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
+08:56:34.989 [nioEventLoopGroup-46-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: Bad count
 java.lang.IllegalStateException: Bad count
 	at sun.reflect.GeneratedConstructorAccessor291.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -697,7 +697,7 @@ java.lang.IllegalStateException: Bad count
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 2, 2018 5:23:53 AM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 3, 2018 8:56:45 AM</p>
 </div>
 </div>
 </body>
