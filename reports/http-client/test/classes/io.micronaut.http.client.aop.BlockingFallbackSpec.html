@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.217s</div>
+<div class="counter">0.211s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">test that fallback is called when an exception happens invoking the server</td>
-<td>0.217s</td>
+<td>0.211s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,9 +87,9 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:56:29.857 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:29.860 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:29.985 [nioEventLoopGroup-27-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
+<pre>04:08:47.842 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:47.850 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:47.970 [nioEventLoopGroup-27-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
 java.lang.RuntimeException: bad
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -120,7 +120,7 @@ java.lang.RuntimeException: bad
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:30.001 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingFallbackSpec$BookClient$Intercepted] executed with error: Internal Server Error: bad
+04:08:47.987 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingFallbackSpec$BookClient$Intercepted] executed with error: Internal Server Error: bad
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: bad
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -164,7 +164,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:30.052 [nioEventLoopGroup-27-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
+04:08:48.038 [nioEventLoopGroup-27-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
 java.lang.RuntimeException: bad
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -195,7 +195,7 @@ java.lang.RuntimeException: bad
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:30.066 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingFallbackSpec$BookClient$Intercepted] executed with error: Internal Server Error: bad
+04:08:48.050 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingFallbackSpec$BookClient$Intercepted] executed with error: Internal Server Error: bad
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: bad
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -239,7 +239,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:30.091 [nioEventLoopGroup-27-8] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
+04:08:48.078 [nioEventLoopGroup-27-8] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
 java.lang.RuntimeException: bad
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -270,7 +270,7 @@ java.lang.RuntimeException: bad
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:30.104 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingFallbackSpec$BookClient$Intercepted] executed with error: Internal Server Error: bad
+04:08:48.087 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingFallbackSpec$BookClient$Intercepted] executed with error: Internal Server Error: bad
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: bad
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -314,7 +314,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:30.122 [nioEventLoopGroup-27-9] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
+04:08:48.105 [nioEventLoopGroup-27-9] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
 java.lang.RuntimeException: bad
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -345,7 +345,7 @@ java.lang.RuntimeException: bad
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:30.130 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingFallbackSpec$BookClient$Intercepted] executed with error: Internal Server Error: bad
+04:08:48.112 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingFallbackSpec$BookClient$Intercepted] executed with error: Internal Server Error: bad
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: bad
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -389,7 +389,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:30.141 [nioEventLoopGroup-27-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
+04:08:48.124 [nioEventLoopGroup-27-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
 java.lang.RuntimeException: bad
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -418,7 +418,7 @@ java.lang.RuntimeException: bad
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:30.145 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingFallbackSpec$BookClient$Intercepted] executed with error: Internal Server Error: bad
+04:08:48.128 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingFallbackSpec$BookClient$Intercepted] executed with error: Internal Server Error: bad
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: bad
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -473,7 +473,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 3, 2018 8:56:45 AM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 4, 2018 4:09:03 AM</p>
 </div>
 </div>
 </body>

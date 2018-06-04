@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.160s</div>
+<div class="counter">0.142s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">test that fallbacks are called for CompletableFuture responses</td>
-<td>0.160s</td>
+<td>0.142s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,9 +87,9 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:56:32.716 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:32.724 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:32.839 [nioEventLoopGroup-39-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
+<pre>04:08:50.684 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:50.687 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:50.787 [nioEventLoopGroup-39-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
 java.lang.RuntimeException: bad
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -123,7 +123,7 @@ java.lang.RuntimeException: bad
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.851 [nioEventLoopGroup-39-3] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
+04:08:50.803 [nioEventLoopGroup-39-3] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: bad
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -167,7 +167,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.891 [nioEventLoopGroup-39-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
+04:08:50.837 [nioEventLoopGroup-39-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
 java.lang.RuntimeException: bad
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -201,7 +201,7 @@ java.lang.RuntimeException: bad
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.894 [nioEventLoopGroup-39-6] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
+04:08:50.846 [nioEventLoopGroup-39-6] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: bad
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -245,7 +245,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.911 [nioEventLoopGroup-39-8] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
+04:08:50.857 [nioEventLoopGroup-39-8] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
 java.lang.RuntimeException: bad
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -279,7 +279,7 @@ java.lang.RuntimeException: bad
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.913 [nioEventLoopGroup-39-3] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
+04:08:50.861 [nioEventLoopGroup-39-3] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: bad
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -323,7 +323,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.923 [nioEventLoopGroup-39-9] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
+04:08:50.868 [nioEventLoopGroup-39-9] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
 java.lang.RuntimeException: bad
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -355,7 +355,7 @@ java.lang.RuntimeException: bad
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.929 [nioEventLoopGroup-39-6] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
+04:08:50.874 [nioEventLoopGroup-39-6] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: bad
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -399,7 +399,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.938 [nioEventLoopGroup-39-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
+04:08:50.880 [nioEventLoopGroup-39-4] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
 java.lang.RuntimeException: bad
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -433,7 +433,7 @@ java.lang.RuntimeException: bad
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.939 [nioEventLoopGroup-39-3] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
+04:08:50.881 [nioEventLoopGroup-39-3] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: bad
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -477,7 +477,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.947 [nioEventLoopGroup-39-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
+04:08:50.885 [nioEventLoopGroup-39-7] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
 java.lang.RuntimeException: bad
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -511,7 +511,7 @@ java.lang.RuntimeException: bad
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.949 [nioEventLoopGroup-39-6] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
+04:08:50.887 [nioEventLoopGroup-39-6] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: bad
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -555,7 +555,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.956 [nioEventLoopGroup-39-8] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
+04:08:50.892 [nioEventLoopGroup-39-8] ERROR i.m.h.s.netty.RoutingInBoundHandler - Unexpected error occurred: bad
 java.lang.RuntimeException: bad
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -587,7 +587,7 @@ java.lang.RuntimeException: bad
 	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
 	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:32.959 [nioEventLoopGroup-39-3] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
+04:08:50.893 [nioEventLoopGroup-39-3] ERROR i.m.http.client.DefaultHttpClient - Client [io.micronaut.http.client.aop.CompletableFutureFallbackSpec$BookApi] received HTTP error response: Internal Server Error: bad
 io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server Error: bad
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1151)
 	at io.micronaut.http.client.DefaultHttpClient$5.channelRead0(DefaultHttpClient.java:1090)
@@ -642,7 +642,7 @@ io.micronaut.http.client.exceptions.HttpClientResponseException: Internal Server
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 3, 2018 8:56:45 AM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 4, 2018 4:09:03 AM</p>
 </div>
 </div>
 </body>

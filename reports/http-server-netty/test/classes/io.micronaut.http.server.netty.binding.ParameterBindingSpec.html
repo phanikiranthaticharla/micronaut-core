@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.121s</div>
+<div class="counter">0.129s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">test bind HTTP parameters for URI GET /parameter/all</td>
-<td>0.004s</td>
+<td>0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -99,7 +99,7 @@
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI GET /parameter/map?values.max=20&amp;values.offset=30</td>
-<td>0.002s</td>
+<td>0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -109,22 +109,22 @@
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI GET /parameter/named?maximum=20</td>
-<td>0.003s</td>
+<td>0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI GET /parameter/optional</td>
-<td>0.002s</td>
+<td>0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI GET /parameter/optional-list?values=10&amp;values=20</td>
-<td>0.009s</td>
+<td>0.008s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI GET /parameter/optional?max=20</td>
-<td>0.002s</td>
+<td>0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -139,7 +139,7 @@
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI GET /parameter/path/20</td>
-<td>0.004s</td>
+<td>0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -154,47 +154,47 @@
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI GET /parameter/path/20/foo/10</td>
-<td>0.015s</td>
+<td>0.014s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI GET /parameter/query?name=Fr%20ed</td>
-<td>0.002s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">test bind HTTP parameters for URI GET /parameter/queryName/Fr%20ed</td>
-<td>0.002s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">test bind HTTP parameters for URI GET /parameter/simple</td>
-<td>0.005s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">test bind HTTP parameters for URI GET /parameter/simple?max=20</td>
-<td>0.002s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">test bind HTTP parameters for URI GET /parameter?max=20</td>
 <td>0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">test bind HTTP parameters for URI POST /parameter/query?name=Fr%20ed</td>
-<td>0.002s</td>
+<td class="success">test bind HTTP parameters for URI GET /parameter/queryName/Fr%20ed</td>
+<td>0.003s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">test bind HTTP parameters for URI POST /parameter/save-again?max=30</td>
+<td class="success">test bind HTTP parameters for URI GET /parameter/simple</td>
+<td>0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test bind HTTP parameters for URI GET /parameter/simple?max=20</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test bind HTTP parameters for URI GET /parameter?max=20</td>
 <td>0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">test bind HTTP parameters for URI POST /parameter/query?name=Fr%20ed</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test bind HTTP parameters for URI POST /parameter/save-again?max=30</td>
+<td>0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">test bind HTTP parameters for URI POST /parameter/save?max=30</td>
-<td>0.015s</td>
+<td>0.016s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -202,11 +202,11 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:58:04.313 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:58:04.315 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:58:04.369 [nioEventLoopGroup-41-4] ERROR i.m.h.s.n.c.UnsatisfiedRouteHandler - POST /parameter/save?max=30 (Bad Request): Required argument [Integer max] not specified
-08:58:04.419 [nioEventLoopGroup-41-9] ERROR i.m.h.s.n.c.UnsatisfiedRouteHandler - GET /parameter/simple (Bad Request): Required argument [Integer max] not specified
-08:58:04.425 [nioEventLoopGroup-41-4] ERROR i.m.h.s.n.c.UnsatisfiedRouteHandler - GET /parameter/named (Bad Request): Required argument [Integer max] not specified
+<pre>04:10:22.253 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:10:22.256 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:10:22.310 [nioEventLoopGroup-41-4] ERROR i.m.h.s.n.c.UnsatisfiedRouteHandler - POST /parameter/save?max=30 (Bad Request): Required argument [Integer max] not specified
+04:10:22.359 [nioEventLoopGroup-41-9] ERROR i.m.h.s.n.c.UnsatisfiedRouteHandler - GET /parameter/simple (Bad Request): Required argument [Integer max] not specified
+04:10:22.364 [nioEventLoopGroup-41-4] ERROR i.m.h.s.n.c.UnsatisfiedRouteHandler - GET /parameter/named (Bad Request): Required argument [Integer max] not specified
 </pre>
 </span>
 </div>
@@ -218,7 +218,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 3, 2018 8:58:05 AM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 4, 2018 4:10:23 AM</p>
 </div>
 </div>
 </body>

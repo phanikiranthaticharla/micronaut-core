@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1.181s</div>
+<div class="counter">1.034s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,17 +79,17 @@
 </thead>
 <tr>
 <td class="success">test default client ssl configuration</td>
-<td>0.172s</td>
+<td>0.100s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test default server ssl configuration</td>
-<td>0.075s</td>
+<td>0.154s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test default ssl configuration</td>
-<td>0.934s</td>
+<td>0.780s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -97,99 +97,99 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:56:14.182 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:14.202 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:14.215 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.yaml.YamlPropertySourceLoader@556676a6
-08:56:14.222 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.PropertiesPropertySourceLoader@6b5a8dd1
-08:56:14.237 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
-08:56:14.240 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
-08:56:14.241 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.241 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.241 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.322 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.yaml.YamlPropertySourceLoader@233489f0
-08:56:14.323 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.PropertiesPropertySourceLoader@1f41bb5f
-08:56:14.324 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
-08:56:14.325 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
-08:56:14.326 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
-08:56:14.327 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
-08:56:14.328 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
-08:56:14.329 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
-08:56:14.329 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.329 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.330 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.416 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [true] for property: micronaut.ssl.enabled
-08:56:14.425 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blah] for property: micronaut.ssl.key.password
-08:56:14.431 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahpath] for property: micronaut.ssl.key-store.path
-08:56:14.433 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahtrust] for property: micronaut.ssl.trust-store.path
-08:56:14.475 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:14.482 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:14.483 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.yaml.YamlPropertySourceLoader@7fb3068a
-08:56:14.484 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.PropertiesPropertySourceLoader@34a360bd
-08:56:14.486 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
-08:56:14.487 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
-08:56:14.490 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.490 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.491 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.500 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.yaml.YamlPropertySourceLoader@45db2825
-08:56:14.501 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.PropertiesPropertySourceLoader@4b1df50e
-08:56:14.503 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
-08:56:14.504 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
-08:56:14.504 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
-08:56:14.505 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
-08:56:14.507 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
-08:56:14.507 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
-08:56:14.508 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.508 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.508 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.517 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [true] for property: micronaut.ssl.enabled
-08:56:14.518 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blah] for property: micronaut.ssl.key.password
-08:56:14.520 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahpath] for property: micronaut.ssl.key-store.path
-08:56:14.521 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahtrust] for property: micronaut.ssl.trust-store.path
-08:56:14.530 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blah] for property: micronaut.ssl.key.password
-08:56:14.531 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahpath] for property: micronaut.ssl.key-store.path
-08:56:14.541 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - Bean [Definition: io.micronaut.http.ssl.ServerSslConfiguration$DefaultTrustStoreConfiguration] will not be loaded due to failing conditions:
-08:56:14.541 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - * Required property [micronaut.server.ssl.trust-store] not present
-08:56:14.610 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahtrust] for property: micronaut.ssl.trust-store.path
-08:56:14.623 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - Bean [Definition: io.micronaut.http.ssl.ClientSslConfiguration$DefaultKeyConfiguration] will not be loaded due to failing conditions:
-08:56:14.623 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - * Required property [micronaut.http.client.ssl.key] not present
-08:56:14.631 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - Bean [Definition: io.micronaut.http.ssl.ClientSslConfiguration$DefaultKeyStoreConfiguration] will not be loaded due to failing conditions:
-08:56:14.632 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - * Required property [micronaut.http.client.ssl.key-store] not present
-08:56:14.633 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [clienttrust] for property: micronaut.http.client.ssl.trust-store.path
-08:56:14.647 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:14.650 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:14.651 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.yaml.YamlPropertySourceLoader@454f78ac
-08:56:14.652 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.PropertiesPropertySourceLoader@4fbfe0b5
-08:56:14.652 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
-08:56:14.653 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
-08:56:14.653 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.653 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.654 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.660 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.yaml.YamlPropertySourceLoader@3f2e6a3b
-08:56:14.660 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.PropertiesPropertySourceLoader@3a1e6615
-08:56:14.661 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
-08:56:14.662 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
-08:56:14.662 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
-08:56:14.662 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
-08:56:14.663 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
-08:56:14.663 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
-08:56:14.663 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.663 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.664 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
-08:56:14.668 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [true] for property: micronaut.ssl.enabled
-08:56:14.670 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blah] for property: micronaut.ssl.key.password
-08:56:14.671 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahpath] for property: micronaut.ssl.key-store.path
-08:56:14.673 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahtrust] for property: micronaut.ssl.trust-store.path
-08:56:14.675 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blah] for property: micronaut.ssl.key.password
-08:56:14.676 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahpath] for property: micronaut.ssl.key-store.path
-08:56:14.678 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - Bean [Definition: io.micronaut.http.ssl.ClientSslConfiguration$DefaultTrustStoreConfiguration] will not be loaded due to failing conditions:
-08:56:14.678 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - * Required property [micronaut.http.client.ssl.trust-store] not present
-08:56:14.679 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahtrust] for property: micronaut.ssl.trust-store.path
-08:56:14.685 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [[foo]] for property: micronaut.server.ssl.ciphers
-08:56:14.689 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - Bean [Definition: io.micronaut.http.ssl.ServerSslConfiguration$DefaultKeyConfiguration] will not be loaded due to failing conditions:
-08:56:14.690 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - * Required property [micronaut.server.ssl.key] not present
-08:56:14.692 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - Bean [Definition: io.micronaut.http.ssl.ServerSslConfiguration$DefaultKeyStoreConfiguration] will not be loaded due to failing conditions:
-08:56:14.692 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - * Required property [micronaut.server.ssl.key-store] not present
-08:56:14.695 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [servertrust] for property: micronaut.server.ssl.trust-store.path
+<pre>04:08:33.172 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:33.187 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:33.200 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.yaml.YamlPropertySourceLoader@556676a6
+04:08:33.208 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.PropertiesPropertySourceLoader@6b5a8dd1
+04:08:33.215 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
+04:08:33.218 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
+04:08:33.219 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.220 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.220 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.290 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.yaml.YamlPropertySourceLoader@233489f0
+04:08:33.291 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.PropertiesPropertySourceLoader@1f41bb5f
+04:08:33.292 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
+04:08:33.293 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
+04:08:33.294 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
+04:08:33.295 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
+04:08:33.296 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
+04:08:33.296 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
+04:08:33.297 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.297 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.297 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.367 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [true] for property: micronaut.ssl.enabled
+04:08:33.376 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blah] for property: micronaut.ssl.key.password
+04:08:33.381 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahpath] for property: micronaut.ssl.key-store.path
+04:08:33.384 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahtrust] for property: micronaut.ssl.trust-store.path
+04:08:33.424 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:33.428 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:33.430 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.yaml.YamlPropertySourceLoader@79c368f2
+04:08:33.432 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.PropertiesPropertySourceLoader@445a1c9a
+04:08:33.433 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
+04:08:33.434 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
+04:08:33.434 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.434 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.434 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.448 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.yaml.YamlPropertySourceLoader@7aa5f7ac
+04:08:33.449 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.PropertiesPropertySourceLoader@4d8f626b
+04:08:33.450 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
+04:08:33.450 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
+04:08:33.451 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
+04:08:33.451 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
+04:08:33.452 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
+04:08:33.452 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
+04:08:33.453 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.453 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.453 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.462 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [true] for property: micronaut.ssl.enabled
+04:08:33.465 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blah] for property: micronaut.ssl.key.password
+04:08:33.468 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahpath] for property: micronaut.ssl.key-store.path
+04:08:33.469 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahtrust] for property: micronaut.ssl.trust-store.path
+04:08:33.479 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blah] for property: micronaut.ssl.key.password
+04:08:33.483 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahpath] for property: micronaut.ssl.key-store.path
+04:08:33.499 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - Bean [Definition: io.micronaut.http.ssl.ServerSslConfiguration$DefaultTrustStoreConfiguration] will not be loaded due to failing conditions:
+04:08:33.500 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - * Required property [micronaut.server.ssl.trust-store] not present
+04:08:33.501 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahtrust] for property: micronaut.ssl.trust-store.path
+04:08:33.510 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - Bean [Definition: io.micronaut.http.ssl.ClientSslConfiguration$DefaultKeyConfiguration] will not be loaded due to failing conditions:
+04:08:33.510 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - * Required property [micronaut.http.client.ssl.key] not present
+04:08:33.512 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - Bean [Definition: io.micronaut.http.ssl.ClientSslConfiguration$DefaultKeyStoreConfiguration] will not be loaded due to failing conditions:
+04:08:33.512 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - * Required property [micronaut.http.client.ssl.key-store] not present
+04:08:33.514 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [clienttrust] for property: micronaut.http.client.ssl.trust-store.path
+04:08:33.524 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:33.528 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:33.529 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.yaml.YamlPropertySourceLoader@6960c6cb
+04:08:33.530 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.PropertiesPropertySourceLoader@237a2cce
+04:08:33.531 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
+04:08:33.531 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
+04:08:33.532 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.532 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.532 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.536 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.yaml.YamlPropertySourceLoader@59baf75e
+04:08:33.537 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Reading property sources from loader: io.micronaut.context.env.PropertiesPropertySourceLoader@44fd4e29
+04:08:33.538 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
+04:08:33.538 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
+04:08:33.539 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: env
+04:08:33.539 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
+04:08:33.540 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
+04:08:33.540 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: system
+04:08:33.541 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.541 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.541 [Test worker] DEBUG i.m.context.env.DefaultEnvironment - Processing property source: context
+04:08:33.628 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [true] for property: micronaut.ssl.enabled
+04:08:33.630 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blah] for property: micronaut.ssl.key.password
+04:08:33.636 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahpath] for property: micronaut.ssl.key-store.path
+04:08:33.643 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahtrust] for property: micronaut.ssl.trust-store.path
+04:08:33.645 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blah] for property: micronaut.ssl.key.password
+04:08:33.646 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahpath] for property: micronaut.ssl.key-store.path
+04:08:33.647 [Test worker] DEBUG i.m.context.condition.Condition - Bean [Definition: io.micronaut.http.ssl.ClientSslConfiguration$DefaultTrustStoreConfiguration] will not be loaded due to failing conditions:
+04:08:33.648 [Test worker] DEBUG i.m.context.condition.Condition - * Required property [micronaut.http.client.ssl.trust-store] not present
+04:08:33.648 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [blahtrust] for property: micronaut.ssl.trust-store.path
+04:08:33.653 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [[foo]] for property: micronaut.server.ssl.ciphers
+04:08:33.655 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - Bean [Definition: io.micronaut.http.ssl.ServerSslConfiguration$DefaultKeyConfiguration] will not be loaded due to failing conditions:
+04:08:33.655 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - * Required property [micronaut.server.ssl.key] not present
+04:08:33.656 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - Bean [Definition: io.micronaut.http.ssl.ServerSslConfiguration$DefaultKeyStoreConfiguration] will not be loaded due to failing conditions:
+04:08:33.656 [ForkJoinPool.commonPool-worker-1] DEBUG i.m.context.condition.Condition - * Required property [micronaut.server.ssl.key-store] not present
+04:08:33.658 [Test worker] TRACE i.m.c.e.PropertySourcePropertyResolver - Resolved value [servertrust] for property: micronaut.server.ssl.trust-store.path
 </pre>
 </span>
 </div>
@@ -201,7 +201,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 3, 2018 8:56:15 AM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 4, 2018 4:08:34 AM</p>
 </div>
 </div>
 </body>

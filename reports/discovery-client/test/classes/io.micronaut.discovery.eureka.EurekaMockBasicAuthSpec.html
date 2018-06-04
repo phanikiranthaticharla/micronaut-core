@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.904s</div>
+<div class="counter">1.165s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">test authentication works</td>
-<td>0.904s</td>
+<td>1.165s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,113 +87,113 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:55:33.743 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:55:33.745 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:55:33.798 [Test worker] DEBUG i.m.h.server.netty.NettyHttpServer - Binding server to port: 27125
-08:55:33.802 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:55:33.804 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:55:33.898 [Test worker] DEBUG i.m.h.server.netty.NettyHttpServer - Binding server to port: 8618
-08:55:33.970 [Test worker] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.2.Final
-08:55:33.986 [Test worker] INFO  o.h.v.i.engine.ConfigurationImpl - HV000002: Ignoring XML configuration.
-08:55:34.402 [nioEventLoopGroup-41-5] DEBUG i.m.http.client.DefaultHttpClient - Sending HTTP Request: GET /eureka/apps
-08:55:34.402 [nioEventLoopGroup-41-5] DEBUG i.m.http.client.DefaultHttpClient - Chosen Server: localhost(27125)
-08:55:34.403 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Content-Type: application/json
-08:55:34.403 [nioEventLoopGroup-41-3] DEBUG i.m.http.client.DefaultHttpClient - Sending HTTP Request: POST /eureka/apps/authenticated-server
-08:55:34.403 [nioEventLoopGroup-41-3] DEBUG i.m.http.client.DefaultHttpClient - Chosen Server: localhost(27125)
-08:55:34.403 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Content-Type: application/json
-08:55:34.403 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Accept: application/json
-08:55:34.403 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Authorization: Basic Zm9vOmJhcg==
-08:55:34.403 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - host: localhost
-08:55:34.403 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - connection: close
-08:55:34.403 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - content-length: 746
-08:55:34.403 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Body
-08:55:34.403 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.403 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - {&quot;instance&quot;:{&quot;instanceId&quot;:&quot;authenticated-server:8618&quot;,&quot;app&quot;:&quot;authenticated-server&quot;,&quot;ipAddr&quot;:&quot;127.0.0.1&quot;,&quot;port&quot;:{&quot;@enabled&quot;:true,&quot;$&quot;:8618},&quot;securePort&quot;:{&quot;@enabled&quot;:false,&quot;$&quot;:0},&quot;homePageUrl&quot;:&quot;http://localhost:8618&quot;,&quot;statusPageUrl&quot;:&quot;http://localhost:8618/health&quot;,&quot;healthCheckUrl&quot;:&quot;http://localhost:8618/health&quot;,&quot;secureHealthCheckUrl&quot;:&quot;https://localhost/health&quot;,&quot;vipAddress&quot;:&quot;authenticated-server&quot;,&quot;secureVipAddress&quot;:&quot;authenticated-server&quot;,&quot;countryId&quot;:1,&quot;dataCenterInfo&quot;:{&quot;@class&quot;:&quot;com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo&quot;,&quot;name&quot;:&quot;MyOwn&quot;},&quot;hostName&quot;:&quot;localhost&quot;,&quot;status&quot;:&quot;UP&quot;,&quot;leaseInfo&quot;:{&quot;renewalIntervalInSecs&quot;:30,&quot;durationInSecs&quot;:90,&quot;registrationTimestamp&quot;:0,&quot;lastRenewalTimestamp&quot;:0,&quot;evictionTimestamp&quot;:0,&quot;serviceUpTimestamp&quot;:0}}}
-08:55:34.403 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.404 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Accept: application/json
-08:55:34.404 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Authorization: Basic Zm9vOmJhcg==
-08:55:34.404 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - host: localhost
-08:55:34.404 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - connection: close
-08:55:34.405 [nioEventLoopGroup-40-3] DEBUG i.m.h.server.netty.NettyHttpServer - Server localhost:27125 Received Request: GET /eureka/apps
-08:55:34.405 [nioEventLoopGroup-40-3] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matching route GET - /eureka/apps
-08:55:34.405 [nioEventLoopGroup-40-3] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matched route GET - /eureka/apps to controller class io.micronaut.discovery.eureka.MockEurekaServer
-08:55:34.405 [nioEventLoopGroup-40-2] DEBUG i.m.h.server.netty.NettyHttpServer - Server localhost:27125 Received Request: POST /eureka/apps/authenticated-server
-08:55:34.405 [nioEventLoopGroup-40-2] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matching route POST - /eureka/apps/authenticated-server
-08:55:34.409 [nioEventLoopGroup-40-2] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matched route POST - /eureka/apps/authenticated-server to controller class io.micronaut.discovery.eureka.MockEurekaServer
-08:55:34.463 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - HTTP Client Response Received for Request: GET /eureka/apps
-08:55:34.463 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Status Code: 200 OK
-08:55:34.464 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - content-type: application/json
-08:55:34.464 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - content-length: 19
-08:55:34.464 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - connection: close
-08:55:34.464 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Body
-08:55:34.464 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.464 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - {&quot;applications&quot;:{}}
-08:55:34.464 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.469 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - HTTP Client Response Received for Request: POST /eureka/apps/authenticated-server
-08:55:34.469 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Status Code: 200 OK
-08:55:34.469 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - content-type: application/json
-08:55:34.469 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - connection: close
-08:55:34.469 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - content-length: 12
-08:55:34.469 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Body
-08:55:34.469 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.469 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - [NO_CONTENT]
-08:55:34.469 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.470 [nioEventLoopGroup-41-3] INFO  i.m.d.registration.AutoRegistration - Registered service [authenticated-server] with Eureka
-08:55:34.584 [nioEventLoopGroup-41-3] DEBUG i.m.http.client.DefaultHttpClient - Sending HTTP Request: GET /eureka/apps
-08:55:34.584 [nioEventLoopGroup-41-3] DEBUG i.m.http.client.DefaultHttpClient - Chosen Server: localhost(27125)
-08:55:34.584 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Content-Type: application/json
-08:55:34.584 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Accept: application/json
-08:55:34.584 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Authorization: Basic Zm9vOmJhcg==
-08:55:34.584 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - host: localhost
-08:55:34.584 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - connection: close
-08:55:34.585 [nioEventLoopGroup-40-4] DEBUG i.m.h.server.netty.NettyHttpServer - Server localhost:27125 Received Request: GET /eureka/apps
-08:55:34.586 [nioEventLoopGroup-40-4] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matching route GET - /eureka/apps
-08:55:34.586 [nioEventLoopGroup-40-4] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matched route GET - /eureka/apps to controller class io.micronaut.discovery.eureka.MockEurekaServer
-08:55:34.602 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - HTTP Client Response Received for Request: GET /eureka/apps
-08:55:34.602 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Status Code: 200 OK
-08:55:34.602 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - content-type: application/json
-08:55:34.602 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - content-length: 814
-08:55:34.602 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - connection: close
-08:55:34.602 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Body
-08:55:34.602 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.602 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - {&quot;applications&quot;:{&quot;application&quot;:[{&quot;name&quot;:&quot;authenticated-server&quot;,&quot;instances&quot;:[{&quot;instanceId&quot;:&quot;authenticated-server:8618&quot;,&quot;app&quot;:&quot;authenticated-server&quot;,&quot;ipAddr&quot;:&quot;127.0.0.1&quot;,&quot;port&quot;:{&quot;@enabled&quot;:true,&quot;$&quot;:8618},&quot;securePort&quot;:{&quot;@enabled&quot;:false,&quot;$&quot;:0},&quot;homePageUrl&quot;:&quot;http://localhost:8618&quot;,&quot;statusPageUrl&quot;:&quot;http://localhost:8618/health&quot;,&quot;healthCheckUrl&quot;:&quot;http://localhost:8618/health&quot;,&quot;secureHealthCheckUrl&quot;:&quot;https://localhost/health&quot;,&quot;vipAddress&quot;:&quot;authenticated-server&quot;,&quot;secureVipAddress&quot;:&quot;authenticated-server&quot;,&quot;countryId&quot;:1,&quot;dataCenterInfo&quot;:{&quot;@class&quot;:&quot;com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo&quot;,&quot;name&quot;:&quot;MyOwn&quot;},&quot;hostName&quot;:&quot;localhost&quot;,&quot;status&quot;:&quot;UP&quot;,&quot;leaseInfo&quot;:{&quot;renewalIntervalInSecs&quot;:30,&quot;durationInSecs&quot;:90,&quot;registrationTimestamp&quot;:0,&quot;lastRenewalTimestamp&quot;:0,&quot;evictionTimestamp&quot;:0,&quot;serviceUpTimestamp&quot;:0}}]}]}}
-08:55:34.602 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.610 [nioEventLoopGroup-41-7] DEBUG i.m.http.client.DefaultHttpClient - Sending HTTP Request: GET /eureka/apps
-08:55:34.610 [nioEventLoopGroup-41-7] DEBUG i.m.http.client.DefaultHttpClient - Chosen Server: localhost(27125)
-08:55:34.610 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - host: localhost
-08:55:34.610 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - connection: close
-08:55:34.611 [nioEventLoopGroup-40-5] DEBUG i.m.h.server.netty.NettyHttpServer - Server localhost:27125 Received Request: GET /eureka/apps
-08:55:34.611 [nioEventLoopGroup-40-5] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matching route GET - /eureka/apps
-08:55:34.612 [nioEventLoopGroup-40-5] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matched route GET - /eureka/apps to controller class io.micronaut.discovery.eureka.MockEurekaServer
-08:55:34.613 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - HTTP Client Response Received for Request: GET /eureka/apps
-08:55:34.613 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - Status Code: 403 Forbidden
-08:55:34.613 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - connection: close
-08:55:34.613 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - Body
-08:55:34.613 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.613 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - 
-08:55:34.613 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.613 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - Full HTTP response received an empty body
-08:55:34.613 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - Unable to convert response body to target type class java.lang.String
-08:55:34.622 [nioEventLoopGroup-41-5] DEBUG i.m.http.client.DefaultHttpClient - Sending HTTP Request: DELETE /eureka/apps/authenticated-server/authenticated-server%3A8618
-08:55:34.622 [nioEventLoopGroup-41-5] DEBUG i.m.http.client.DefaultHttpClient - Chosen Server: localhost(27125)
-08:55:34.622 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Content-Type: application/json
-08:55:34.622 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Accept: application/json
-08:55:34.622 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Authorization: Basic Zm9vOmJhcg==
-08:55:34.622 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - host: localhost
-08:55:34.622 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - connection: close
-08:55:34.623 [nioEventLoopGroup-40-2] DEBUG i.m.h.server.netty.NettyHttpServer - Server localhost:27125 Received Request: DELETE /eureka/apps/authenticated-server/authenticated-server%3A8618
-08:55:34.623 [nioEventLoopGroup-40-2] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matching route DELETE - /eureka/apps/authenticated-server/authenticated-server%3A8618
-08:55:34.623 [nioEventLoopGroup-40-2] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matched route DELETE - /eureka/apps/authenticated-server/authenticated-server%3A8618 to controller class io.micronaut.discovery.eureka.MockEurekaServer
-08:55:34.631 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - HTTP Client Response Received for Request: DELETE /eureka/apps/authenticated-server/authenticated-server%3A8618
-08:55:34.631 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Status Code: 200 OK
-08:55:34.631 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - content-type: application/json
-08:55:34.631 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - connection: close
-08:55:34.631 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - content-length: 4
-08:55:34.631 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Body
-08:55:34.631 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.631 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - [OK]
-08:55:34.631 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.632 [Test worker] INFO  i.m.d.registration.AutoRegistration - De-registered service [authenticated-server] with Eureka
+<pre>04:07:55.156 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:07:55.160 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:07:55.212 [Test worker] DEBUG i.m.h.server.netty.NettyHttpServer - Binding server to port: 19183
+04:07:55.216 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:07:55.219 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:07:55.286 [Test worker] DEBUG i.m.h.server.netty.NettyHttpServer - Binding server to port: 24464
+04:07:55.343 [Test worker] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.2.Final
+04:07:55.362 [Test worker] INFO  o.h.v.i.engine.ConfigurationImpl - HV000002: Ignoring XML configuration.
+04:07:55.892 [nioEventLoopGroup-41-5] DEBUG i.m.http.client.DefaultHttpClient - Sending HTTP Request: GET /eureka/apps
+04:07:55.892 [nioEventLoopGroup-41-5] DEBUG i.m.http.client.DefaultHttpClient - Chosen Server: localhost(19183)
+04:07:55.892 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Content-Type: application/json
+04:07:55.892 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Accept: application/json
+04:07:55.892 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Authorization: Basic Zm9vOmJhcg==
+04:07:55.892 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - host: localhost
+04:07:55.895 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - connection: close
+04:07:55.896 [nioEventLoopGroup-40-3] DEBUG i.m.h.server.netty.NettyHttpServer - Server localhost:19183 Received Request: GET /eureka/apps
+04:07:55.899 [nioEventLoopGroup-40-3] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matching route GET - /eureka/apps
+04:07:55.899 [nioEventLoopGroup-40-3] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matched route GET - /eureka/apps to controller class io.micronaut.discovery.eureka.MockEurekaServer
+04:07:55.915 [nioEventLoopGroup-41-3] DEBUG i.m.http.client.DefaultHttpClient - Sending HTTP Request: POST /eureka/apps/authenticated-server
+04:07:55.915 [nioEventLoopGroup-41-3] DEBUG i.m.http.client.DefaultHttpClient - Chosen Server: localhost(19183)
+04:07:55.915 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Content-Type: application/json
+04:07:55.915 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Accept: application/json
+04:07:55.916 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Authorization: Basic Zm9vOmJhcg==
+04:07:55.916 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - host: localhost
+04:07:55.916 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - connection: close
+04:07:55.916 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - content-length: 751
+04:07:55.916 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Body
+04:07:55.916 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:55.916 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - {&quot;instance&quot;:{&quot;instanceId&quot;:&quot;authenticated-server:24464&quot;,&quot;app&quot;:&quot;authenticated-server&quot;,&quot;ipAddr&quot;:&quot;127.0.0.1&quot;,&quot;port&quot;:{&quot;@enabled&quot;:true,&quot;$&quot;:24464},&quot;securePort&quot;:{&quot;@enabled&quot;:false,&quot;$&quot;:0},&quot;homePageUrl&quot;:&quot;http://localhost:24464&quot;,&quot;statusPageUrl&quot;:&quot;http://localhost:24464/health&quot;,&quot;healthCheckUrl&quot;:&quot;http://localhost:24464/health&quot;,&quot;secureHealthCheckUrl&quot;:&quot;https://localhost/health&quot;,&quot;vipAddress&quot;:&quot;authenticated-server&quot;,&quot;secureVipAddress&quot;:&quot;authenticated-server&quot;,&quot;countryId&quot;:1,&quot;dataCenterInfo&quot;:{&quot;@class&quot;:&quot;com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo&quot;,&quot;name&quot;:&quot;MyOwn&quot;},&quot;hostName&quot;:&quot;localhost&quot;,&quot;status&quot;:&quot;UP&quot;,&quot;leaseInfo&quot;:{&quot;renewalIntervalInSecs&quot;:30,&quot;durationInSecs&quot;:90,&quot;registrationTimestamp&quot;:0,&quot;lastRenewalTimestamp&quot;:0,&quot;evictionTimestamp&quot;:0,&quot;serviceUpTimestamp&quot;:0}}}
+04:07:55.916 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:55.917 [nioEventLoopGroup-40-2] DEBUG i.m.h.server.netty.NettyHttpServer - Server localhost:19183 Received Request: POST /eureka/apps/authenticated-server
+04:07:55.918 [nioEventLoopGroup-40-2] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matching route POST - /eureka/apps/authenticated-server
+04:07:55.918 [nioEventLoopGroup-40-2] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matched route POST - /eureka/apps/authenticated-server to controller class io.micronaut.discovery.eureka.MockEurekaServer
+04:07:55.947 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - HTTP Client Response Received for Request: POST /eureka/apps/authenticated-server
+04:07:55.947 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Status Code: 200 OK
+04:07:55.948 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - content-type: application/json
+04:07:55.948 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - connection: close
+04:07:55.948 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - content-length: 12
+04:07:55.948 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Body
+04:07:55.948 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:55.948 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - [NO_CONTENT]
+04:07:55.948 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:55.948 [nioEventLoopGroup-41-3] INFO  i.m.d.registration.AutoRegistration - Registered service [authenticated-server] with Eureka
+04:07:55.964 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - HTTP Client Response Received for Request: GET /eureka/apps
+04:07:55.964 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Status Code: 200 OK
+04:07:55.964 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - content-type: application/json
+04:07:55.964 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - content-length: 19
+04:07:55.964 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - connection: close
+04:07:55.965 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Body
+04:07:55.965 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:55.965 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - {&quot;applications&quot;:{}}
+04:07:55.965 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:56.075 [nioEventLoopGroup-41-3] DEBUG i.m.http.client.DefaultHttpClient - Sending HTTP Request: GET /eureka/apps
+04:07:56.075 [nioEventLoopGroup-41-3] DEBUG i.m.http.client.DefaultHttpClient - Chosen Server: localhost(19183)
+04:07:56.075 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Content-Type: application/json
+04:07:56.075 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Accept: application/json
+04:07:56.075 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Authorization: Basic Zm9vOmJhcg==
+04:07:56.075 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - host: localhost
+04:07:56.075 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - connection: close
+04:07:56.077 [nioEventLoopGroup-40-4] DEBUG i.m.h.server.netty.NettyHttpServer - Server localhost:19183 Received Request: GET /eureka/apps
+04:07:56.078 [nioEventLoopGroup-40-4] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matching route GET - /eureka/apps
+04:07:56.078 [nioEventLoopGroup-40-4] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matched route GET - /eureka/apps to controller class io.micronaut.discovery.eureka.MockEurekaServer
+04:07:56.090 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - HTTP Client Response Received for Request: GET /eureka/apps
+04:07:56.090 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Status Code: 200 OK
+04:07:56.090 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - content-type: application/json
+04:07:56.090 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - content-length: 819
+04:07:56.090 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - connection: close
+04:07:56.090 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - Body
+04:07:56.090 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:56.090 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - {&quot;applications&quot;:{&quot;application&quot;:[{&quot;name&quot;:&quot;authenticated-server&quot;,&quot;instances&quot;:[{&quot;instanceId&quot;:&quot;authenticated-server:24464&quot;,&quot;app&quot;:&quot;authenticated-server&quot;,&quot;ipAddr&quot;:&quot;127.0.0.1&quot;,&quot;port&quot;:{&quot;@enabled&quot;:true,&quot;$&quot;:24464},&quot;securePort&quot;:{&quot;@enabled&quot;:false,&quot;$&quot;:0},&quot;homePageUrl&quot;:&quot;http://localhost:24464&quot;,&quot;statusPageUrl&quot;:&quot;http://localhost:24464/health&quot;,&quot;healthCheckUrl&quot;:&quot;http://localhost:24464/health&quot;,&quot;secureHealthCheckUrl&quot;:&quot;https://localhost/health&quot;,&quot;vipAddress&quot;:&quot;authenticated-server&quot;,&quot;secureVipAddress&quot;:&quot;authenticated-server&quot;,&quot;countryId&quot;:1,&quot;dataCenterInfo&quot;:{&quot;@class&quot;:&quot;com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo&quot;,&quot;name&quot;:&quot;MyOwn&quot;},&quot;hostName&quot;:&quot;localhost&quot;,&quot;status&quot;:&quot;UP&quot;,&quot;leaseInfo&quot;:{&quot;renewalIntervalInSecs&quot;:30,&quot;durationInSecs&quot;:90,&quot;registrationTimestamp&quot;:0,&quot;lastRenewalTimestamp&quot;:0,&quot;evictionTimestamp&quot;:0,&quot;serviceUpTimestamp&quot;:0}}]}]}}
+04:07:56.090 [nioEventLoopGroup-41-3] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:56.093 [nioEventLoopGroup-41-7] DEBUG i.m.http.client.DefaultHttpClient - Sending HTTP Request: GET /eureka/apps
+04:07:56.094 [nioEventLoopGroup-41-7] DEBUG i.m.http.client.DefaultHttpClient - Chosen Server: localhost(19183)
+04:07:56.094 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - host: localhost
+04:07:56.094 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - connection: close
+04:07:56.095 [nioEventLoopGroup-40-5] DEBUG i.m.h.server.netty.NettyHttpServer - Server localhost:19183 Received Request: GET /eureka/apps
+04:07:56.095 [nioEventLoopGroup-40-5] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matching route GET - /eureka/apps
+04:07:56.095 [nioEventLoopGroup-40-5] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matched route GET - /eureka/apps to controller class io.micronaut.discovery.eureka.MockEurekaServer
+04:07:56.097 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - HTTP Client Response Received for Request: GET /eureka/apps
+04:07:56.097 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - Status Code: 403 Forbidden
+04:07:56.097 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - connection: close
+04:07:56.097 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - Body
+04:07:56.097 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:56.097 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - 
+04:07:56.097 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:56.097 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - Full HTTP response received an empty body
+04:07:56.097 [nioEventLoopGroup-41-7] TRACE i.m.http.client.DefaultHttpClient - Unable to convert response body to target type class java.lang.String
+04:07:56.102 [nioEventLoopGroup-41-5] DEBUG i.m.http.client.DefaultHttpClient - Sending HTTP Request: DELETE /eureka/apps/authenticated-server/authenticated-server%3A24464
+04:07:56.102 [nioEventLoopGroup-41-5] DEBUG i.m.http.client.DefaultHttpClient - Chosen Server: localhost(19183)
+04:07:56.102 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Content-Type: application/json
+04:07:56.102 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Accept: application/json
+04:07:56.102 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Authorization: Basic Zm9vOmJhcg==
+04:07:56.102 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - host: localhost
+04:07:56.102 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - connection: close
+04:07:56.102 [nioEventLoopGroup-40-2] DEBUG i.m.h.server.netty.NettyHttpServer - Server localhost:19183 Received Request: DELETE /eureka/apps/authenticated-server/authenticated-server%3A24464
+04:07:56.102 [nioEventLoopGroup-40-2] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matching route DELETE - /eureka/apps/authenticated-server/authenticated-server%3A24464
+04:07:56.103 [nioEventLoopGroup-40-2] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matched route DELETE - /eureka/apps/authenticated-server/authenticated-server%3A24464 to controller class io.micronaut.discovery.eureka.MockEurekaServer
+04:07:56.106 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - HTTP Client Response Received for Request: DELETE /eureka/apps/authenticated-server/authenticated-server%3A24464
+04:07:56.106 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Status Code: 200 OK
+04:07:56.106 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - content-type: application/json
+04:07:56.106 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - connection: close
+04:07:56.106 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - content-length: 4
+04:07:56.106 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - Body
+04:07:56.106 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:56.106 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - [OK]
+04:07:56.106 [nioEventLoopGroup-41-5] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:56.107 [Test worker] INFO  i.m.d.registration.AutoRegistration - De-registered service [authenticated-server] with Eureka
 </pre>
 </span>
 </div>
@@ -205,7 +205,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 3, 2018 8:55:44 AM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 4, 2018 4:08:06 AM</p>
 </div>
 </div>
 </body>

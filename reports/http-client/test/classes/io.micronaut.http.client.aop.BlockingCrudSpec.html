@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.188s</div>
+<div class="counter">0.273s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,32 +79,32 @@
 </thead>
 <tr>
 <td class="success">test CRUD operations on generated client that returns blocking responses</td>
-<td>0.100s</td>
+<td>0.115s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test DELETE operation with null values</td>
-<td>0.005s</td>
+<td>0.048s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test GET operation with null values</td>
-<td>0.009s</td>
+<td>0.002s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test POST operation with null values</td>
-<td>0.007s</td>
+<td>0.013s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test PUT operation with null values</td>
-<td>0.011s</td>
+<td>0.009s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test configured client</td>
-<td>0.056s</td>
+<td>0.086s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -112,11 +112,11 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:56:31.114 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:31.116 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:31.192 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:31.194 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:31.345 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingCrudSpec$BookClient$Intercepted] executed with error: Null values are not allowed to be passed to client methods (public abstract void io.micronaut.http.client.aop.BlockingCrudSpec$BookApi.delete(java.lang.Long)). Add @javax.validation.Nullable if that is the desired behavior
+<pre>04:08:49.141 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:49.143 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:49.198 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:49.200 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:08:49.397 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingCrudSpec$BookClient$Intercepted] executed with error: Null values are not allowed to be passed to client methods (public abstract void io.micronaut.http.client.aop.BlockingCrudSpec$BookApi.delete(java.lang.Long)). Add @javax.validation.Nullable if that is the desired behavior
 java.lang.IllegalArgumentException: Null values are not allowed to be passed to client methods (public abstract void io.micronaut.http.client.aop.BlockingCrudSpec$BookApi.delete(java.lang.Long)). Add @javax.validation.Nullable if that is the desired behavior
 	at io.micronaut.http.client.interceptor.HttpClientIntroductionAdvice.intercept(HttpClientIntroductionAdvice.java:146)
 	at io.micronaut.aop.MethodInterceptor.intercept(MethodInterceptor.java:41)
@@ -189,7 +189,7 @@ java.lang.IllegalArgumentException: Null values are not allowed to be passed to 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:31.350 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingCrudSpec$BookClient$Intercepted] executed with error: Null values are not allowed to be passed to client methods (public abstract io.micronaut.http.client.aop.BlockingCrudSpec$Book io.micronaut.http.client.aop.BlockingCrudSpec$BookApi.save(java.lang.String)). Add @javax.validation.Nullable if that is the desired behavior
+04:08:49.445 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingCrudSpec$BookClient$Intercepted] executed with error: Null values are not allowed to be passed to client methods (public abstract io.micronaut.http.client.aop.BlockingCrudSpec$Book io.micronaut.http.client.aop.BlockingCrudSpec$BookApi.save(java.lang.String)). Add @javax.validation.Nullable if that is the desired behavior
 java.lang.IllegalArgumentException: Null values are not allowed to be passed to client methods (public abstract io.micronaut.http.client.aop.BlockingCrudSpec$Book io.micronaut.http.client.aop.BlockingCrudSpec$BookApi.save(java.lang.String)). Add @javax.validation.Nullable if that is the desired behavior
 	at io.micronaut.http.client.interceptor.HttpClientIntroductionAdvice.intercept(HttpClientIntroductionAdvice.java:146)
 	at io.micronaut.aop.MethodInterceptor.intercept(MethodInterceptor.java:41)
@@ -262,7 +262,7 @@ java.lang.IllegalArgumentException: Null values are not allowed to be passed to 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:31.358 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingCrudSpec$BookClient$Intercepted] executed with error: Null values are not allowed to be passed to client methods (public abstract io.micronaut.http.client.aop.BlockingCrudSpec$Book io.micronaut.http.client.aop.BlockingCrudSpec$BookApi.update(java.lang.Long,java.lang.String)). Add @javax.validation.Nullable if that is the desired behavior
+04:08:49.459 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingCrudSpec$BookClient$Intercepted] executed with error: Null values are not allowed to be passed to client methods (public abstract io.micronaut.http.client.aop.BlockingCrudSpec$Book io.micronaut.http.client.aop.BlockingCrudSpec$BookApi.update(java.lang.Long,java.lang.String)). Add @javax.validation.Nullable if that is the desired behavior
 java.lang.IllegalArgumentException: Null values are not allowed to be passed to client methods (public abstract io.micronaut.http.client.aop.BlockingCrudSpec$Book io.micronaut.http.client.aop.BlockingCrudSpec$BookApi.update(java.lang.Long,java.lang.String)). Add @javax.validation.Nullable if that is the desired behavior
 	at io.micronaut.http.client.interceptor.HttpClientIntroductionAdvice.intercept(HttpClientIntroductionAdvice.java:146)
 	at io.micronaut.aop.MethodInterceptor.intercept(MethodInterceptor.java:41)
@@ -341,7 +341,7 @@ java.lang.IllegalArgumentException: Null values are not allowed to be passed to 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.lang.Thread.run(Thread.java:748)
-08:56:31.368 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingCrudSpec$BookClient$Intercepted] executed with error: Null values are not allowed to be passed to client methods (public abstract io.micronaut.http.client.aop.BlockingCrudSpec$Book io.micronaut.http.client.aop.BlockingCrudSpec$BookApi.get(java.lang.Long)). Add @javax.validation.Nullable if that is the desired behavior
+04:08:49.468 [Test worker] ERROR i.m.r.intercept.RecoveryInterceptor - Type [io.micronaut.http.client.aop.BlockingCrudSpec$BookClient$Intercepted] executed with error: Null values are not allowed to be passed to client methods (public abstract io.micronaut.http.client.aop.BlockingCrudSpec$Book io.micronaut.http.client.aop.BlockingCrudSpec$BookApi.get(java.lang.Long)). Add @javax.validation.Nullable if that is the desired behavior
 java.lang.IllegalArgumentException: Null values are not allowed to be passed to client methods (public abstract io.micronaut.http.client.aop.BlockingCrudSpec$Book io.micronaut.http.client.aop.BlockingCrudSpec$BookApi.get(java.lang.Long)). Add @javax.validation.Nullable if that is the desired behavior
 	at io.micronaut.http.client.interceptor.HttpClientIntroductionAdvice.intercept(HttpClientIntroductionAdvice.java:146)
 	at io.micronaut.aop.MethodInterceptor.intercept(MethodInterceptor.java:41)
@@ -425,7 +425,7 @@ java.lang.IllegalArgumentException: Null values are not allowed to be passed to 
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 3, 2018 8:56:45 AM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 4, 2018 4:09:03 AM</p>
 </div>
 </div>
 </body>

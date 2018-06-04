@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.157s</div>
+<div class="counter">0.162s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">test eureka health indicator</td>
-<td>0.157s</td>
+<td>0.162s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,30 +87,30 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:55:34.645 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:55:34.647 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:55:34.693 [Test worker] DEBUG i.m.h.server.netty.NettyHttpServer - Binding server to port: 59528
-08:55:34.697 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:55:34.698 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:55:34.737 [Test worker] INFO  o.h.v.i.engine.ConfigurationImpl - HV000002: Ignoring XML configuration.
-08:55:34.767 [nioEventLoopGroup-43-2] DEBUG i.m.http.client.DefaultHttpClient - Sending HTTP Request: GET /eureka/apps
-08:55:34.767 [nioEventLoopGroup-43-2] DEBUG i.m.http.client.DefaultHttpClient - Chosen Server: localhost(59528)
-08:55:34.767 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - Content-Type: application/json
-08:55:34.768 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - Accept: application/json
-08:55:34.768 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - host: localhost
-08:55:34.768 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - connection: close
-08:55:34.769 [nioEventLoopGroup-42-2] DEBUG i.m.h.server.netty.NettyHttpServer - Server localhost:59528 Received Request: GET /eureka/apps
-08:55:34.769 [nioEventLoopGroup-42-2] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matching route GET - /eureka/apps
-08:55:34.769 [nioEventLoopGroup-42-2] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matched route GET - /eureka/apps to controller class io.micronaut.discovery.eureka.MockEurekaServer
-08:55:34.777 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - HTTP Client Response Received for Request: GET /eureka/apps
-08:55:34.777 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - Status Code: 200 OK
-08:55:34.777 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - content-type: application/json
-08:55:34.777 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - content-length: 19
-08:55:34.777 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - connection: close
-08:55:34.777 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - Body
-08:55:34.777 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - ----
-08:55:34.777 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - {&quot;applications&quot;:{}}
-08:55:34.777 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - ----
+<pre>04:07:56.317 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:07:56.320 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:07:56.363 [Test worker] DEBUG i.m.h.server.netty.NettyHttpServer - Binding server to port: 38462
+04:07:56.366 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:07:56.370 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:07:56.412 [Test worker] INFO  o.h.v.i.engine.ConfigurationImpl - HV000002: Ignoring XML configuration.
+04:07:56.443 [nioEventLoopGroup-43-2] DEBUG i.m.http.client.DefaultHttpClient - Sending HTTP Request: GET /eureka/apps
+04:07:56.443 [nioEventLoopGroup-43-2] DEBUG i.m.http.client.DefaultHttpClient - Chosen Server: localhost(38462)
+04:07:56.443 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - Content-Type: application/json
+04:07:56.443 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - Accept: application/json
+04:07:56.443 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - host: localhost
+04:07:56.443 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - connection: close
+04:07:56.444 [nioEventLoopGroup-42-2] DEBUG i.m.h.server.netty.NettyHttpServer - Server localhost:38462 Received Request: GET /eureka/apps
+04:07:56.445 [nioEventLoopGroup-42-2] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matching route GET - /eureka/apps
+04:07:56.445 [nioEventLoopGroup-42-2] DEBUG i.m.h.s.netty.RoutingInBoundHandler - Matched route GET - /eureka/apps to controller class io.micronaut.discovery.eureka.MockEurekaServer
+04:07:56.453 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - HTTP Client Response Received for Request: GET /eureka/apps
+04:07:56.453 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - Status Code: 200 OK
+04:07:56.453 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - content-type: application/json
+04:07:56.453 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - content-length: 19
+04:07:56.453 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - connection: close
+04:07:56.453 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - Body
+04:07:56.453 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - ----
+04:07:56.453 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - {&quot;applications&quot;:{}}
+04:07:56.453 [nioEventLoopGroup-43-2] TRACE i.m.http.client.DefaultHttpClient - ----
 </pre>
 </span>
 </div>
@@ -122,7 +122,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 3, 2018 8:55:44 AM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 4, 2018 4:08:06 AM</p>
 </div>
 </div>
 </body>

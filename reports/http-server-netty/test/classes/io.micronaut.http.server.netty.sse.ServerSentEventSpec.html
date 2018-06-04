@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">1m0.19s</div>
+<div class="counter">1m0.20s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,27 +79,27 @@
 </thead>
 <tr>
 <td class="success">test consume event stream object</td>
-<td>0.147s</td>
+<td>0.135s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test consume event stream string</td>
-<td>0.114s</td>
+<td>0.111s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test consume rich event stream object</td>
-<td>0.106s</td>
+<td>0.108s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test receive error from onError</td>
-<td>59.720s</td>
+<td>59.735s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test receive error from supplier</td>
-<td>0.107s</td>
+<td>0.113s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,87 +107,75 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:57:00.858 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:57:00.860 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:57:00.980 [Test worker] INFO  okhttp-eventsource-[] - Starting EventSource client using URI: http://localhost:25945/sse/object
-08:57:01.022 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.092 [Test worker] INFO  okhttp-eventsource-[] - Starting EventSource client using URI: http://localhost:25945/sse/string
-08:57:01.107 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.206 [Test worker] INFO  okhttp-eventsource-[] - Starting EventSource client using URI: http://localhost:25945/sse/rich
-08:57:01.212 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.313 [Test worker] INFO  okhttp-eventsource-[] - Starting EventSource client using URI: http://localhost:25945/sse/exception
-08:57:01.321 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.325 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.329 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.330 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.333 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.333 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.336 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.336 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.338 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.339 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.342 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.342 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.344 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.345 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.347 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.347 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.350 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.350 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.353 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.353 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.355 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.355 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.358 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.358 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.361 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.361 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.364 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.364 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.367 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.367 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.370 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.370 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.373 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.373 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.376 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.376 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.378 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.378 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.381 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.381 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.383 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.384 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.386 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.386 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.390 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.390 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.394 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.394 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.397 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.397 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.400 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.400 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.403 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.403 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.406 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.406 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.408 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.408 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.411 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.411 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.413 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:57:01.414 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:57:01.420 [Test worker] INFO  okhttp-eventsource-[] - Starting EventSource client using URI: http://localhost:25945/sse/onError
-08:57:01.449 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Waiting 24326 milliseconds before reconnecting...
-08:57:25.778 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Waiting 23991 milliseconds before reconnecting...
-08:57:49.772 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Waiting 17848 milliseconds before reconnecting...
-08:58:01.062 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:58:01.065 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:58:01.118 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:58:01.120 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
-08:58:01.224 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
-08:58:01.227 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+<pre>04:09:19.075 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:09:19.078 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:09:19.172 [Test worker] INFO  okhttp-eventsource-[] - Starting EventSource client using URI: http://localhost:54956/sse/object
+04:09:19.220 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.288 [Test worker] INFO  okhttp-eventsource-[] - Starting EventSource client using URI: http://localhost:54956/sse/string
+04:09:19.294 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.395 [Test worker] INFO  okhttp-eventsource-[] - Starting EventSource client using URI: http://localhost:54956/sse/rich
+04:09:19.408 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.504 [Test worker] INFO  okhttp-eventsource-[] - Starting EventSource client using URI: http://localhost:54956/sse/exception
+04:09:19.511 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.515 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.519 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.520 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.523 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.523 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.526 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.526 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.532 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.532 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.535 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.535 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.538 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.539 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.542 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.542 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.544 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.544 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.547 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.548 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.550 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.550 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.553 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.553 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.567 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.567 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.571 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.571 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.575 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.575 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.579 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.579 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.582 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.583 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.586 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.586 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.588 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.589 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.591 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.591 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.594 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.594 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.596 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.596 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.599 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.599 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.602 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.602 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.604 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:09:19.604 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:09:19.616 [Test worker] INFO  okhttp-eventsource-[] - Starting EventSource client using URI: http://localhost:54956/sse/onError
+04:09:20.155 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Waiting 18405 milliseconds before reconnecting...
+04:09:38.566 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Waiting 26799 milliseconds before reconnecting...
+04:10:05.370 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Waiting 17511 milliseconds before reconnecting...
+04:10:19.266 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:10:19.271 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:10:19.344 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:10:19.349 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
+04:10:19.432 [okhttp-eventsource-stream-[]-0] WARN  okhttp-eventsource-[] - Connection unexpectedly closed.
+04:10:19.434 [okhttp-eventsource-stream-[]-0] INFO  okhttp-eventsource-[] - Connected to Event Source stream.
 </pre>
 </span>
 </div>
@@ -199,7 +187,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 3, 2018 8:58:05 AM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 4, 2018 4:10:23 AM</p>
 </div>
 </div>
 </body>

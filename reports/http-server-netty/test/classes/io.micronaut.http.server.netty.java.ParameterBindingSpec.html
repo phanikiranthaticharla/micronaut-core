@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.168s</div>
+<div class="counter">0.175s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,57 +79,57 @@
 </thead>
 <tr>
 <td class="success">test bind HTTP parameters for URI /java/parameter/all</td>
-<td>0.004s</td>
+<td>0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI /java/parameter/all?max=20</td>
-<td>0.003s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">test bind HTTP parameters for URI /java/parameter/list?values=10&amp;values=20</td>
 <td>0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">test bind HTTP parameters for URI /java/parameter/list?values=10,20</td>
+<td class="success">test bind HTTP parameters for URI /java/parameter/list?values=10&amp;values=20</td>
 <td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test bind HTTP parameters for URI /java/parameter/list?values=10,20</td>
+<td>0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI /java/parameter/map?values.max=20&amp;values.offset=30</td>
-<td>0.005s</td>
+<td>0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI /java/parameter/named</td>
-<td>0.016s</td>
+<td>0.021s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI /java/parameter/named?maximum=20</td>
-<td>0.005s</td>
+<td>0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI /java/parameter/nullable</td>
-<td>0.011s</td>
+<td>0.004s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI /java/parameter/nullable?max=20</td>
-<td>0.005s</td>
+<td>0.006s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI /java/parameter/optional</td>
-<td>0.005s</td>
+<td>0.007s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI /java/parameter/optional-list?values=10&amp;values=20</td>
-<td>0.007s</td>
+<td>0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -139,37 +139,37 @@
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI /java/parameter/simple</td>
-<td>0.020s</td>
+<td>0.017s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI /java/parameter/simple?max=20</td>
-<td>0.013s</td>
+<td>0.012s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">test bind HTTP parameters for URI /java/parameter?max=20</td>
-<td>0.018s</td>
+<td>0.014s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">test bind HTTP parameters for URI io.micronaut.http.client.NettyClientHttpRequest@1768e7a0</td>
-<td>0.007s</td>
+<td class="success">test bind HTTP parameters for URI io.micronaut.http.client.NettyClientHttpRequest@10e3af66</td>
+<td>0.030s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">test bind HTTP parameters for URI io.micronaut.http.client.NettyClientHttpRequest@502886c2</td>
+<td class="success">test bind HTTP parameters for URI io.micronaut.http.client.NettyClientHttpRequest@2b24474e</td>
 <td>0.005s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">test bind HTTP parameters for URI io.micronaut.http.client.NettyClientHttpRequest@783075b9</td>
-<td>0.026s</td>
+<td class="success">test bind HTTP parameters for URI io.micronaut.http.client.NettyClientHttpRequest@6f98064b</td>
+<td>0.008s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="success">test bind HTTP parameters for URI io.micronaut.http.client.NettyClientHttpRequest@c59ca76</td>
-<td>0.004s</td>
+<td class="success">test bind HTTP parameters for URI io.micronaut.http.client.NettyClientHttpRequest@82f6b4e</td>
+<td>0.009s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -177,11 +177,11 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>08:56:59.052 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:59.054 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
-08:56:59.154 [nioEventLoopGroup-13-8] ERROR i.m.h.s.n.c.UnsatisfiedRouteHandler - GET /java/parameter/simple (Bad Request): Required argument [Integer max] not specified
-08:56:59.177 [nioEventLoopGroup-13-9] ERROR i.m.h.s.n.c.UnsatisfiedRouteHandler - GET /java/parameter/named (Bad Request): Required argument [Integer max] not specified
-08:56:59.250 [nioEventLoopGroup-13-9] ERROR i.m.h.s.n.c.UnsatisfiedRouteHandler - POST /java/parameter/requires-body (Bad Request): Required argument [Integer max] not specified
+<pre>04:09:17.225 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:09:17.228 [Test worker] INFO  i.m.context.env.DefaultEnvironment - Established active environments: [test, cloud, gcp]
+04:09:17.305 [nioEventLoopGroup-13-8] ERROR i.m.h.s.n.c.UnsatisfiedRouteHandler - GET /java/parameter/simple (Bad Request): Required argument [Integer max] not specified
+04:09:17.327 [nioEventLoopGroup-13-9] ERROR i.m.h.s.n.c.UnsatisfiedRouteHandler - GET /java/parameter/named (Bad Request): Required argument [Integer max] not specified
+04:09:17.409 [nioEventLoopGroup-13-9] ERROR i.m.h.s.n.c.UnsatisfiedRouteHandler - POST /java/parameter/requires-body (Bad Request): Required argument [Integer max] not specified
 </pre>
 </span>
 </div>
@@ -193,7 +193,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 3, 2018 8:58:05 AM</p>
+<a href="http://www.gradle.org">Gradle 4.6</a> at Jun 4, 2018 4:10:23 AM</p>
 </div>
 </div>
 </body>
